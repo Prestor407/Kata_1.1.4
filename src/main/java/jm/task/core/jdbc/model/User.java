@@ -1,11 +1,12 @@
 package jm.task.core.jdbc.model;
 
+
 import javax.persistence.*;
 import java.util.Objects;
 
 
 @Entity
-@Table(name = "User")
+@Table(name = "Users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

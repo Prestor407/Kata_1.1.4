@@ -8,8 +8,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDaoJDBCImpl extends Util implements UserDao {
-    private final Connection connection = getConnection();
+public class UserDaoJDBCImpl implements UserDao {
+    private final Connection connection = Util.getConnection();
 
     public UserDaoJDBCImpl() {
 
