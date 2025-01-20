@@ -17,6 +17,7 @@ public class Util {
     private static final String USERNAME = "prestor";
     private static final String PASSWORD = "prestor";
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
+    private static SessionFactory sessionFactory;
 
     public static Connection getConnection() {
         Connection connection = null;
@@ -28,8 +29,6 @@ public class Util {
         }
         return connection;
     }
-
-    private static SessionFactory sessionFactory;
 
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
